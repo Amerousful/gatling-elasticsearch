@@ -79,7 +79,7 @@ public class GatlingElasticPublisher extends AbstractElasticsearchPublisher<ILog
         String requestPart = partOfMessage[2];
         String responsePart = partOfMessage[3];
 
-        String statusCodePattern = "status:\\n\\t(\\d{3})[\\sa-zA-Z]+?headers:";
+        String statusCodePattern = "status:\\n\\t(\\d{3})";
         String messagePattern = ": (.*)";
         String requestNamePattern = "Request:\\s+?(.*):";
         String sessionPattern = "Session:\\s+?(.*)";
